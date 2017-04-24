@@ -1,1 +1,39 @@
-{     "devDependencies": {         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-tachyons-cli",     "homepage": "https://github.com/npmtest/node-npmtest-tachyons-cli",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-tachyons-cli.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### basic test coverage for  tachyons-cli (v1.0.11)  [![npm package](https://img.shields.io/npm/v/npmtest-tachyons-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-tachyons-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-tachyons-cli.svg)](https://travis-ci.org/npmtest/node-npmtest-tachyons-cli)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-tachyons-cli",
+    "keywords": [
+        "coverage",
+        "test",
+        "tachyons-cli"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_tachyons_cli.js",
+    "name": "npmtest-tachyons-cli",
+    "nameAlias": "npmtest_tachyons_cli",
+    "nameOriginal": "npmtest-tachyons-cli",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-tachyons-cli.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "2017.4.25"
+}

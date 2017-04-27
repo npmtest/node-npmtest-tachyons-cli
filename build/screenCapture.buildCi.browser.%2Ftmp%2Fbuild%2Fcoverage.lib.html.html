@@ -190,21 +190,21 @@
 <body>
 <div class="header low">
     <h1 style="font-weight: bold;">
-        <a href="https://github.com/npmtest/node-npmtest-tachyons-cli">npmtest-tachyons-cli (v0.0.1)</a>
+        <a href="https://github.com/npmtest/node-npmtest-tachyons-cli">npmtest-tachyons-cli (v2017.4.25)</a>
     </h1>
     <h1>Code coverage report for <span class="entity">node-npmtest-tachyons-cli/node_modules/tachyons-cli/cli.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">38.89% <small>(21 / 54)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">22.22% <small>(12 / 54)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">16.67% <small>(2 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
         Functions: <span class="metric">0% <small>(0 / 1)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">38.89% <small>(21 / 54)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">22.22% <small>(12 / 54)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
@@ -344,7 +344,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -371,10 +371,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4</span>
-<span class="cline-any cline-yes">4</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -382,7 +378,6 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -394,19 +389,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4</span>
-<span class="cline-any cline-yes">4</span>
-<span class="cline-any cline-yes">4</span>
-<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -459,7 +459,7 @@ const authorsToMd = require('authors-to-markdown')
 &nbsp;
 const tachyonsBuildCss = require('tachyons-build-css')
 &nbsp;
-const cli = meow(`
+<span class="cstat-no" title="statement not covered">const cli = meow(`</span>
   Usage
     $ tachyons &lt;input.css&gt;
 &nbsp;
@@ -486,10 +486,10 @@ const cli = meow(`
   }
 })
 &nbsp;
-const inputFile = cli.input[0]
-const outputFile = cli.input[1]
+<span class="cstat-no" title="statement not covered">const inputFile = cli.input[0]</span>
+<span class="cstat-no" title="statement not covered">const outputFile = cli.input[1]</span>
 &nbsp;
-<span class="missing-if-branch" title="if path not taken">I</span>if (cli.flags.new) {
+<span class="cstat-no" title="statement not covered">if (cli.flags.new) {</span>
 <span class="cstat-no" title="statement not covered">  console.log('Generating a new Tachyons project')</span>
 <span class="cstat-no" title="statement not covered">  const projDir = cli.flags.new == true ? 'tachyons-project' : cli.flags.new</span>
 &nbsp;
@@ -511,17 +511,17 @@ const outputFile = cli.input[1]
 <span class="cstat-no" title="statement not covered">  process.exit(0)</span>
 }
 &nbsp;
-<span class="missing-if-branch" title="else path not taken">E</span>if (isBlank(inputFile)) {
-  console.error(chalk.red('Please provide an input stylesheet'))
-  console.log(cli.help)
-  process.exit(1)
+<span class="cstat-no" title="statement not covered">if (isBlank(inputFile)) {</span>
+<span class="cstat-no" title="statement not covered">  console.error(chalk.red('Please provide an input stylesheet'))</span>
+<span class="cstat-no" title="statement not covered">  console.log(cli.help)</span>
+<span class="cstat-no" title="statement not covered">  process.exit(1)</span>
 } else <span class="cstat-no" title="statement not covered">if (!fileExists(inputFile)) {</span>
 <span class="cstat-no" title="statement not covered">  console.error(chalk.red('File does not exist ' + inputFile))</span>
 <span class="cstat-no" title="statement not covered">  console.log(cli.help)</span>
 <span class="cstat-no" title="statement not covered">  process.exit(1)</span>
 }
 &nbsp;
-const input = fs.readFileSync(inputFile, 'utf8')
+<span class="cstat-no" title="statement not covered">const input = fs.readFileSync(inputFile, 'utf8')</span>
 <span class="cstat-no" title="statement not covered">tachyonsBuildCss(input, {</span>
   from: inputFile,
   to: outputFile,
@@ -561,7 +561,7 @@ const input = fs.readFileSync(inputFile, 'utf8')
 </tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 24 2017 18:48:42 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Thu Apr 27 2017 21:02:54 GMT+0000 (UTC)</div>
 </div>
 
 

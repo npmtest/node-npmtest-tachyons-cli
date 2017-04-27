@@ -142,7 +142,7 @@
 <tspan x="10" y="2234">    ├─┬ autoprefixer@6.7.7 </tspan>
 <tspan x="10" y="2250">    │ ├─┬ browserslist@1.7.7 </tspan>
 <tspan x="10" y="2266">    │ │ └── electron-to-chromium@1.3.8 </tspan>
-<tspan x="10" y="2282">    │ ├── caniuse-db@1.0.30000660 </tspan>
+<tspan x="10" y="2282">    │ ├── caniuse-db@1.0.30000662 </tspan>
 <tspan x="10" y="2298">    │ ├── normalize-range@0.1.2 </tspan>
 <tspan x="10" y="2314">    │ ├── num2fraction@1.2.2 </tspan>
 <tspan x="10" y="2330">    │ └── postcss-value-parser@3.3.0 </tspan>

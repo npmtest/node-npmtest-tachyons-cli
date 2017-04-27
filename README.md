@@ -1,6 +1,6 @@
 # npmtest-tachyons-cli
 
-#### basic test coverage for  tachyons-cli (v1.0.11)  [![npm package](https://img.shields.io/npm/v/npmtest-tachyons-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-tachyons-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-tachyons-cli.svg)](https://travis-ci.org/npmtest/node-npmtest-tachyons-cli)
+#### basic test coverage for  [tachyons-cli (v1.0.11)](https://github.com/tachyons-css/tachyons-cli#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-tachyons-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-tachyons-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-tachyons-cli.svg)](https://travis-ci.org/npmtest/node-npmtest-tachyons-cli)
 
 #### Postprocess tachyons stylesheets
 
@@ -35,37 +35,16 @@
 ```json
 
 {
-    "name": "tachyons-cli",
-    "description": "Postprocess tachyons stylesheets",
     "author": {
         "name": "John Otander",
         "url": "johnotander.com"
     },
-    "version": "1.0.11",
-    "main": "index.js",
     "bin": {
         "tachyons": "cli.js"
     },
-    "engines": {
-        "node": ">=6"
+    "bugs": {
+        "url": "https://github.com/tachyons-css/tachyons-cli/issues"
     },
-    "files": [
-        "cli.js",
-        "templates"
-    ],
-    "scripts": {
-        "lint": "standard",
-        "test": "ava -v",
-        "test:rebuild": "ava -v test/regenerate-output.js"
-    },
-    "repository": "tachyons-css/tachyons-cli",
-    "keywords": [
-        "tachyons",
-        "css",
-        "cli",
-        "cli-app"
-    ],
-    "license": "ISC",
     "dependencies": {
         "authors-to-markdown": "^0.1.0",
         "chalk": "^1.1.3",
@@ -82,12 +61,58 @@
         "single-trailing-newline": "^1.0.0",
         "tachyons-build-css": "^1.1.2"
     },
+    "description": "Postprocess tachyons stylesheets",
     "devDependencies": {
         "ava": "^0.16.0",
         "pify": "^2.3.0",
         "standard": "^10.0.2",
         "tachyons-type-scale": "6.0.1"
-    }
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "b643443e44badc26bb7392ba55e6f7401e87b2fb",
+        "tarball": "https://registry.npmjs.org/tachyons-cli/-/tachyons-cli-1.0.11.tgz"
+    },
+    "engines": {
+        "node": ">=6"
+    },
+    "files": [
+        "cli.js",
+        "templates"
+    ],
+    "gitHead": "7680117ed13583a4039d404309ef057016c73af8",
+    "homepage": "https://github.com/tachyons-css/tachyons-cli#readme",
+    "keywords": [
+        "tachyons",
+        "css",
+        "cli",
+        "cli-app"
+    ],
+    "license": "ISC",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "donnieberg"
+        },
+        {
+            "name": "johno"
+        },
+        {
+            "name": "mrmrs"
+        }
+    ],
+    "name": "tachyons-cli",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tachyons-css/tachyons-cli.git"
+    },
+    "scripts": {
+        "lint": "standard",
+        "test": "ava -v",
+        "test:rebuild": "ava -v test/regenerate-output.js"
+    },
+    "version": "1.0.11"
 }
 ```
 
